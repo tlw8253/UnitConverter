@@ -18,7 +18,7 @@
 
 6.  run git commit as follows, you will be sent to VIM editor and must add a comment:
 	
-	git commit -a.  
+	git commit -a  
 	
 7.  final step update the repository on GitHub:
 	
