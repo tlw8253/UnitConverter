@@ -1,8 +1,8 @@
 ## Steps taken to upload from local project:
 ##   Step 5 was tricky to add subdirectories with files
-1.  create repository through website with just readme file
-	git clone https://github.com/tlw8253/UnitConverter.git
+1.  create repository through website with just readme file	
 2.  clone GIT repository created above to local drive GIT project area
+	git clone https://github.com/tlw8253/UnitConverter.git
 3.  move project directories and files in to local drive GIT project area
 4.  use command: git status often to check if repository is up to date
 
@@ -10,10 +10,9 @@
 ##     git add scr/main/..
     the above will stage the files to add in the next two steps
 6.  run git commit as follows, you will be sent to VIM editor and must add a comment
-	git commit -a
-7.  final step update the repository on GitHub:
+	git commit -a67.  final step update the repository on GitHub:
 	git push
-8.  final status check
+7.  final status check
 	git status
 
 
