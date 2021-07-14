@@ -12,7 +12,7 @@
 
 ## 5.  add directories path and files with git add as in the following example:
 
-##     git add scr/main/..
+##     		git add scr/main/..
     
     the above will stage the files to add in the next two steps
 
@@ -31,29 +31,50 @@
 
 ## Steps to take to download files, compile files, and run Java Program
 1.  clone repository to your local project area
+    
     git clone https://github.com/tlw8253/UnitConverter.git
+    
 2. open Git Bash
 3. cd to the UnitConverter source code conatined under src/main (example directory structure):
+   
    cd /desktop/RevCode/Projects/UnitConverter/src/main
+   
 4. perform ls to verify the following file are present:
+    
     Converter.java
+    
     ConverterMenu.java
+    
     ConverterConstants.java
+    
     DistanceConverter.java
+    
     VolumeConverter.java
+    
 ## 5. compile the source as follows, the ConverterConstants.java must be done first
     javac ConverterConstants.java
+    
   6.  the other files can be done in any order, however must include the classpath argument as follows:
+      
       javac -cp .. ConverterMenu.java
+      
       javac -cp .. DistanceConverter.java
+      
       javac -cp .. VolumeConverter.java
+      
       javac -cp .. Converter.java
+      
   7.  the Java class files should now be generated.
   8.  go up one directory to src:
+      
       cd ..
+      
   9.  run the program as follows from the /src directory:
+      
       java main.Converter
+      
  10.  follow the program prompts
+ 
  ##  Note the expected input is integer for menu selection and allows decimal values for conversion items
  ##  NO exception processing is included so entering an unexpected value will crash the program.
       
