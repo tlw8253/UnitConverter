@@ -9,6 +9,7 @@ public class Converter {
   static ConverterMenu objConverterMenu = new ConverterMenu();
   static VolumeConverter objVolumeConverter = new VolumeConverter();
   static DistanceConverter objDistanceConverter = new DistanceConverter();
+  static LiquidConverter objLiquidConverter = new LiquidConverter();
 
 
    //
@@ -53,7 +54,15 @@ public class Converter {
            }
            case 3:
            {
-            if (bTrace) System.out.println("iConversionType: case 3");             
+            if (bTrace) System.out.println("iConversionType: case 3");
+            i2ndConversionType = objConverterMenu.getLiquidConversionType();
+            if (bTrace) System.out.println("i2ndConversionType: " + i2ndConversionType);
+            objLiquidConverter.controllerLiquidConverter(i2ndConversionType);              
+            break;
+           }
+           case 4:
+           {
+            if (bTrace) System.out.println("iConversionType: case 4");             
              break;  
            }
            default:
@@ -66,11 +75,14 @@ public class Converter {
         System.out.println("");
         System.out.println("");
 
-      } while (iConversionType != 3);
+      } while (iConversionType != 4);
 
       objConverterMenu.closeResources();
       objVolumeConverter.closeResources();
       objDistanceConverter.closeResources();
+      objLiquidConverter.closeResources();
+
+
       System.exit(0);
    }
 

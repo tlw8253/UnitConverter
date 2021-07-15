@@ -4,9 +4,12 @@ import java.util.Scanner;  // Import the Scanner class
 
 
 public class ConverterMenu {
+   //Trace variables
     final static boolean bTrace = ConverterConstants.bTrace;
     final static String sTrace = ConverterConstants.sTrace;
     final static String sClass = "ConverterMenu()";
+    //Menu variables
+    //final static int iiVolumeConversion = ConverterConstants.iVolumeConversion;
 
     Scanner objScanner = new Scanner(System.in);  // Create a Scanner object
 
@@ -55,9 +58,10 @@ public class ConverterMenu {
         System.out.println("******************************************");
         System.out.println("** 1. Volume conversions                **");
         System.out.println("** 2. Distance conversions              **");
-        System.out.println("** 3. Quit                              **");
+        System.out.println("** 3. Liquid conversions                **");
+        System.out.println("** 4. Quit                              **");
         System.out.println("******************************************");
-        System.out.println("Enter a value 1-3 from the menu above: ");
+        System.out.println("Enter a value 1-4 from the menu above: ");
         
      }
   
@@ -139,5 +143,43 @@ public class ConverterMenu {
         
      }
 
+/********************************************************************************************************************
+    ** Method: getLiquidConversionType()
+    ********************************************************************************************************************/
+    public int getLiquidConversionType(){
+      String sMethod = " getLiquidConversionType()";
+  
+      if (bTrace){
+         System.out.println(sTrace + sClass + sMethod);
+      }         
+
+      dispalyLiquidConversionTypeMenu();
+      iMenuSelection = objScanner.nextInt();
+      
+      if (bTrace){
+         System.out.println(sTrace + sClass + sMethod + " iMenuSelection: " + iMenuSelection);
+      }
+
+      return(iMenuSelection);
+   }
+
+   /********************************************************************************************************************
+    ** Method: dispalyLiquidConversionTypeMenu()
+    ********************************************************************************************************************/
+    private void dispalyLiquidConversionTypeMenu() {
+      String sMethod = " dispalyLiquidConversionTypeMenu()";
+      
+      if (bTrace){
+         System.out.println(sTrace + sClass + sMethod);
+      }
+      
+      System.out.println("******************************************");
+      System.out.println("** 1. US Gallons to Imperial Gallons    **");
+      System.out.println("** 2. US Gallons to Liters              **");
+      System.out.println("** 3. Main Menu                         **");
+      System.out.println("******************************************");
+      System.out.println("Enter a value 1-3 from the menu above: ");
+      
+   }
 
 }
