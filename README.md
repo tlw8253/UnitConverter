@@ -51,6 +51,8 @@
     
     VolumeConverter.java
     
+    LiquidConverter.java
+    
 ## 5. compile the source as follows, the ConverterConstants.java must be done first
     javac ConverterConstants.java
     
