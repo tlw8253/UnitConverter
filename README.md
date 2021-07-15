@@ -64,6 +64,8 @@
       
       javac -cp .. Converter.java
       
+      javac -cp .. LiquidConverter.java
+      
   7.  the Java class files should now be generated.
   8.  go up one directory to src:
       
