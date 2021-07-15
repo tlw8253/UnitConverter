@@ -64,7 +64,7 @@ private void convertTeaspoonsToTablespoons(){
 /********************************************************************************************************************
 ** Method: convertTeaspoonsToCups()
 ** Google search:
-**   1 US Teaspoon = 0.0625 US Tablespoon
+**   1 US Teaspoon = 0.0208333 US Tablespoon
 ********************************************************************************************************************/
 private void convertTeaspoonsToCups(){
     String sMethod = " convertTeaspoonsToCups()";
