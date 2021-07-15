@@ -12,7 +12,7 @@
 
 ## 5.  add directories path and files with git add as in the following example:
 
-##     		git add scr/main/..
+##     		git add scr/..
     
     the above will stage the files to add in the next two steps
 
