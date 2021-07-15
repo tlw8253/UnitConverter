@@ -31,6 +31,9 @@ public class LiquidConverter {
             case 2:
             convertUSGallonsToLiters();
             break;
+            case 3:
+              //return to main menu
+            break;
             default:
               System.out.println("Invalid Liquid Conversion Entered: [" + iLiquidConversionType + "]");
             break;

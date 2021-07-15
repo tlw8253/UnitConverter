@@ -32,6 +32,9 @@ public class DistanceConverter {
             case 2:
               convertMilesToKilometers();
             break;
+            case 3:
+              //return to main menu
+            break;
             default:
               System.out.println("Invalid Distance Conversion Entered: [" + iDistanceConversionType + "]");
             break;

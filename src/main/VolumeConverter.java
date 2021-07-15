@@ -31,6 +31,9 @@ public void controllerVolumeConverter(int iVolumeConversionType){
         case 2:
           convertTeaspoonsToCups();
         break;
+        case 3:
+          //return to main menu
+        break;
         default:
           System.out.println("Invalid Volume Conversion Entered: [" + iVolumeConversionType + "]");
         break;
